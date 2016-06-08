@@ -3,7 +3,7 @@
 This is a very silly gem which returns a sample of happy or sad emojis based on whether your RSpec tests
 pass or fail! Nobody needs this. But nobody doesn't need it, either.
 
-![Emojify](./example.png)
+![Emojify](http://d.pr/i/1gacW)
 
 ## Installation
 
