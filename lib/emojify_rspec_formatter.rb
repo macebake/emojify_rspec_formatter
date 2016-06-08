@@ -1,7 +1,7 @@
 require 'rspec/core/formatters/base_text_formatter'
 require 'colorize'
 
-class EmojifyRspecFormat < RSpec::Core::Formatters::BaseTextFormatter
+class EmojifyRspecFormatter < RSpec::Core::Formatters::BaseTextFormatter
 
   RSpec::Core::Formatters.register self, *[:example_passed, :example_failed]
 
