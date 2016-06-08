@@ -2,8 +2,8 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = "emojify-rspec_formatter"
-  spec.version       = '0.0.3'
+  spec.name          = "EmojifyRspecFormat"
+  spec.version       = '0.0.5'
   spec.authors       = ["Macey Baker"]
   spec.email         = ["macebake@gmail.com"]
 
