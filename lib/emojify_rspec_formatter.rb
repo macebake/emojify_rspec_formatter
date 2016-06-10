@@ -10,17 +10,21 @@ class EmojifyRspecFormatter < RSpec::Core::Formatters::BaseTextFormatter
   end
 
   def example_passed(passed)
-    @output.print (['🍺  ','🙌  ', '😍  ',
-                    '🆒  ','👌  ', '💘  '].sample).colorize(:background => :green)
-    puts passed.example.description.strip
-
+    @output.print (['🍺  ','🙌  ','😍  ',
+                    '🆒  ','👌  ','💘  ',
+                    '💯  ','🔥  ','😎  ',
+                    '📈  ','💪  ','💎  ',
+                    '💅  ','💋  ','👑  ',
+                    '🎀  ','🎉  ','🎈  '].sample).colorize(:background => :green)
+    puts (passed.example.description.strip).colorize(:green)
   end
 
   def example_failed(failed)
     @output.print (['😨  ', '😵  ', '🙅  ',
-                    '🆘  ', '👎  ', '💔  '].sample).colorize(:background => :red)
-    puts failed.example.description.strip
-
+                    '🆘  ', '👎  ', '💔  ',
+                    '😭  ', '💩  ', '😐  ',
+                    '📉  ', '😱  ', '🙊  '].sample).colorize(:background => :red)
+    puts (failed.example.description.strip).colorize(:green)
   end
 
 end
