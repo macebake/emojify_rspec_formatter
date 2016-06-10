@@ -29,6 +29,8 @@ Add this line to your .rspec file:
 --format EmojifyRspecFormatter
 ```
 
+NOTE! This does not *yet* play nice with --fd (format documentation). To use EmojifyRspecFormatter, remove --format documentation from your .rspec file, and from your spec_helper file if applicable. Otherwise, your output will be a bit wonky :(
+
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/emojify-rspec_formatter. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.

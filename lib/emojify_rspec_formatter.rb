@@ -9,6 +9,14 @@ class EmojifyRspecFormatter < RSpec::Core::Formatters::BaseTextFormatter
     @output = output
   end
 
+  def example_failed(failed)
+    @output.print (['😨  ', '😵  ', '🙅  ',
+                    '🆘  ', '👎  ', '💔  ',
+                    '😭  ', '💩  ', '😐  ',
+                    '📉  ', '😱  ', '🙊  '].sample).colorize(:background => :red)
+    puts (failed.example.description.strip).colorize(:color => :red)
+  end
+
   def example_passed(passed)
     @output.print (['🍺  ','🙌  ','😍  ',
                     '🆒  ','👌  ','💘  ',
@@ -16,15 +24,7 @@ class EmojifyRspecFormatter < RSpec::Core::Formatters::BaseTextFormatter
                     '📈  ','💪  ','💎  ',
                     '💅  ','💋  ','👑  ',
                     '🎀  ','🎉  ','🎈  '].sample).colorize(:background => :green)
-    puts (passed.example.description.strip).colorize(:green)
-  end
-
-  def example_failed(failed)
-    @output.print (['😨  ', '😵  ', '🙅  ',
-                    '🆘  ', '👎  ', '💔  ',
-                    '😭  ', '💩  ', '😐  ',
-                    '📉  ', '😱  ', '🙊  '].sample).colorize(:background => :red)
-    puts (failed.example.description.strip).colorize(:red)
+    puts (passed.example.description.strip).colorize(:color => :green)
   end
 
 end
