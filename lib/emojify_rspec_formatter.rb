@@ -24,7 +24,7 @@ class EmojifyRspecFormatter < RSpec::Core::Formatters::BaseTextFormatter
                     '🆘  ', '👎  ', '💔  ',
                     '😭  ', '💩  ', '😐  ',
                     '📉  ', '😱  ', '🙊  '].sample).colorize(:background => :red)
-    puts (failed.example.description.strip).colorize(:green)
+    puts (failed.example.description.strip).colorize(:red)
   end
 
 end
