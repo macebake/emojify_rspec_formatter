@@ -10,7 +10,7 @@ pass or fail! Nobody needs this. But nobody doesn't need it, either.
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'EmojifyRspecFormatter'
+gem 'emojify_rspec_formatter'
 ```
 
 And then execute:
@@ -19,7 +19,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install EmojifyRspecFormatter
+    $ gem install emojify_rspec_formatter
 
 ## Usage
 
@@ -33,7 +33,7 @@ NOTE! This does not *yet* play nice with --fd (format documentation). To use Emo
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/emojify-rspec_formatter. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/emojify_rspec_formatter. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
