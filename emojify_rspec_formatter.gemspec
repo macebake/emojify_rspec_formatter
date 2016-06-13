@@ -2,12 +2,12 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = "emojify_rspec_formatter"
+  spec.name          = "EmojifyRspecFormatter"
   spec.version       = '0.1.5'
   spec.authors       = ["Macey Baker"]
   spec.email         = ["macebake@gmail.com"]
 
-  spec.summary       = %q{A silly gem that emojifies your RSpec output!}
+  spec.summary       = %q{A silly gem that emojifies your RSpec output! NOTE: Updated (& properly named) gem at https://rubygems.org/gems/emojify_rspec_formatter}
   spec.homepage      = "https://github.com/macebake/emojify_rspec_formatter.git"
   spec.license       = "MIT"
 
