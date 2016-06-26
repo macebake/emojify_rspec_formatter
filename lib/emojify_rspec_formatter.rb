@@ -1,4 +1,5 @@
 require 'rspec/core/formatters/base_text_formatter'
+require 'rspec/core'
 require 'colorize'
 
 class EmojifyRspecFormatter < RSpec::Core::Formatters::BaseTextFormatter
